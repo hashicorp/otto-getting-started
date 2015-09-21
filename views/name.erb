@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style type="text/css">
+		* {
+			font-family: "Helvetia", sans-serif;
+		}
+
+		div {
+			text-align: center;
+			margin-top: 50px;
+			font-size: 36px;
+		}
+
+		div.reset {
+			margin-top: 5px;
+			font-size: 14px;
+		}
+
+		div.reset a {
+			text-decoration: none;
+		}
+
+		div.reset a:visited {
+			text-decoration: none;
+		}
+		</style>
+	</head>
+	<body>
+		<div>
+			Hello <%= @name %>
+		</div>
+		<div class="reset">
+			<a href="/reset">(Reset)</a>
+		</div>
+	</body>
+</html>
