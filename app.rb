@@ -2,6 +2,10 @@ require 'sinatra'
 
 enable :sessions
 
+set :bind, '0.0.0.0'
+set :port, 9292
+set :session_secret, 'otto'
+
 get '/' do
   if session['name']
     @name = session['name']
