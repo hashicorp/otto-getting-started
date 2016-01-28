@@ -4,6 +4,11 @@ enable :sessions
 
 set :session_secret, 'otto'
 
+helpers do
+    include Rack::Utils
+    alias_method :h, :escape_html
+end
+
 get '/' do
   if session['name']
     @name = session['name']
